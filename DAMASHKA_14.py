@@ -9,7 +9,7 @@
 #     else:
 #         continue
 #     letters = s[:index]
-#     digits = s[index:]
+#     digits = s[index:]uuuuuuuuun
 #     if letters.isalpha() and digits.isdigit():
 #         result.append(s)
 # print("Строки с цифрами только в конце:",result)
