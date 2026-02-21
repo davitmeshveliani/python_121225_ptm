@@ -1,5 +1,4 @@
  ###############################################
-
 # strings = ["apple23", "ban1ana45", "12cherry", "grape3", "blue23berry"]
 # result = []
 # for s in strings:
@@ -9,7 +8,7 @@
 #     else:
 #         continue
 #     letters = s[:index]
-#     digits = s[index:]uuuuuuuuun
+#     digits = s[index:]
 #     if letters.isalpha() and digits.isdigit():
 #         result.append(s)
 # print("Строки с цифрами только в конце:",result)
