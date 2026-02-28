@@ -57,7 +57,7 @@
 
 # string = input("Введите скобки: ")
 # ########################################################################
-
+string = input("Введите скобки: ")
 # while "()" in string or "[]" in string or "{}" in string:
 #     string = string.replace("()", "")
 #     string = string.replace("[]", "")
