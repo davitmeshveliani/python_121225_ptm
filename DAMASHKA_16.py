@@ -12,28 +12,32 @@
 #  [1, 'неудовлетворительно'],
 #  [5, 'отлично'], [3, 'хорошо']]
 
-# ####              \\\\\\\\\\\\\\\\\\\\\\\\\\
-# grades = [5, 3, 4, 2, 1, 5, 3]
-# res = []
+####     1         \\\\\\\\\\\\\\\\\\\\\\\\\\
 #
-# for grade in grades:
-#     if grade == 5:
-#         text = "отлично"
-#     elif grade >= 3:
-#         text = "хорошо"
-#     else:
-#         text = "неудовлетворительно"
+grades = [5, 3, 4, 2, 1, 5, 3]
+res = []
+
+for grade in grades:
+    if grade == 5:
+        text = "отлично"
+    elif grade >= 3:
+        text = "хорошо"
+    else:
+        text = "неудовлетворительно"
+
+    res.append([grade, text])
+
+print(res)
 #
-#     res.append([grade, text])
-#
-# print(res)
-# # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# grades = [5, 3, 4, 2, 1, 5, 3]
-#
-# res = [[g, "отлично" if g==5 else "хорошо" if g>=3 else
-#          "неудовлетворительно"] for g in grades]
-#
-# print(res)
+# # ~~~~~~~~~ 1-2 variant ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+grades = [5, 3, 4, 2, 1, 5, 3]
+
+res = [[g, "отлично" if g==5 else "хорошо" if g>=3 else
+         "неудовлетворительно"] for g in grades]
+
+print(res)
+
 ############    \\\\\\\\\\\\\\\\\\
 
 # Правильные скобки
@@ -46,7 +50,7 @@
 # Скобки закрываются в правильном порядке.
 #
 # Пример данных:
-# string = "({[}])"
+# nun = "({[}])"
 #
 # Пример вывода:
 # Скобки: ({[}])
@@ -55,15 +59,15 @@
 # Скобки: ([({}()){}])
 # Валидны: True
 
-# string = input("Введите скобки: ")
 # ########################################################################
-string = input("Введите скобки: ")
-# while "()" in string or "[]" in string or "{}" in string:
-#     string = string.replace("()", "")
-#     string = string.replace("[]", "")
-#     string = string.replace("{}", "")
-#
-# print("Валидны:", string == "")
+
+nun = input("Введите скобки: ")
+while "()" in nun or "[]" in nun or "{}" in nun:
+    nun = nun.replace("()", "")
+    nun = nun.replace("[]", "")
+    nun = nun.replace("{}", "")
+
+print("Валидны:", nun == "")
 
 ############     #####################
 
