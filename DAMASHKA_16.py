@@ -14,29 +14,29 @@
 
 ####     1         \\\\\\\\\\\\\\\\\\\\\\\\\\
 #
-grades = [5, 3, 4, 2, 1, 5, 3]
-res = []
-
-for grade in grades:
-    if grade == 5:
-        text = "отлично"
-    elif grade >= 3:
-        text = "хорошо"
-    else:
-        text = "неудовлетворительно"
-
-    res.append([grade, text])
-
-print(res)
+# grades = [5, 3, 4, 2, 1, 5, 3]
+# res = []
 #
+# for grade in grades:
+#     if grade == 5:
+#         text = "отлично"
+#     elif grade >= 3:
+#         text = "хорошо"
+#     else:
+#         text = "неудовлетворительно"
+#
+#     res.append([grade, text])
+#
+# print(res)
+# #
 # # ~~~~~~~~~ 1-2 variant ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-grades = [5, 3, 4, 2, 1, 5, 3]
-
-res = [[g, "отлично" if g==5 else "хорошо" if g>=3 else
-         "неудовлетворительно"] for g in grades]
-
-print(res)
+# grades = [5, 3, 4, 2, 1, 5, 3]
+#
+# res = [[g, "отлично" if g==5 else "хорошо" if g>=3 else
+#          "неудовлетворительно"] for g in grades]
+#
+# print(res)
 
 ############    \\\\\\\\\\\\\\\\\\
 
@@ -61,13 +61,25 @@ print(res)
 
 # ########################################################################
 
-nun = input("Введите скобки: ")
-while "()" in nun or "[]" in nun or "{}" in nun:
-    nun = nun.replace("()", "")
-    nun = nun.replace("[]", "")
-    nun = nun.replace("{}", "")
-
-print("Валидны:", nun == "")
+# nun = input("Введите скобки: ")
+# while "()" in nun or "[]" in nun or "{}" in nun:
+#     nun = nun.replace("()", "")
+#     nun = nun.replace("[]", "")
+#     nun = nun.replace("{}", "")
+#
+# print("Валидны:", nun == "")
 
 ############     #####################
 
+num = input("Введите скобки: ")
+stack = []
+for ch in num:
+    if ch in "({[":
+        stack.append(ch)
+    elif ch in ")}]":
+        if (not stack or (stack.pop(), ch) not in
+            [('(', ')'), ('[', ']'), ('{', '}')]):
+            print(False)
+            break
+else:
+    print(not stack)
