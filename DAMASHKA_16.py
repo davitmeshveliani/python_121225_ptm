@@ -60,16 +60,16 @@
 # Валидны: True
 
 # ##############  2   ######################
-
-num = input("Введите скобки: ")
-stack = []
-for ch in num:
-    if ch in "({[":
-        stack.append(ch)
-    elif ch in ")}]":
-        if (not stack or (stack.pop(), ch) not in
-            [('(', ')'), ('[', ']'), ('{', '}')]):
-            print(False)
-            break
-else:
-    print(not stack)
+#
+# num = input("Введите скобки: ")
+# stack = []
+# for ch in num:
+#     if ch in "({[":
+#         stack.append(ch)
+#     elif ch in ")}]":
+#         if (not stack or (stack.pop(), ch) not in
+#             [('(', ')'), ('[', ']'), ('{', '}')]):
+#             print(False)
+#             break
+# else:
+#     print(not stack)
