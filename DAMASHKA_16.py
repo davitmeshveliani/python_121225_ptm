@@ -60,16 +60,29 @@
 # Валидны: True
 
 # ##############  2   ######################
+
+
+dict1 = {"a": 1, "b": 2,}
+dict2 = {"a": 1, "b": 2, "c": 3}
+
+if set(dict1.items()) <= set(dict2.items()):
+    print(f"Первый словарь является подмножеством второго:{dict1}")
+else:
+    print(f"Первый словарь не является подмножеством второго:{dict1}")
 #
-# num = input("Введите скобки: ")
-# stack = []
-# for ch in num:
-#     if ch in "({[":
-#         stack.append(ch)
-#     elif ch in ")}]":
-#         if (not stack or (stack.pop(), ch) not in
-#             [('(', ')'), ('[', ']'), ('{', '}')]):
-#             print(False)
-#             break
-# else:
-#     print(not stack)
+#
+
+
+dict1 = {"a": 1, "b": 2}
+dict2 = {"a": 1, "b": 2, "c": 3}
+nun = True
+for key, value in dict1.items():
+    if key not in dict2 or dict2[key] != value:
+        nun = False
+        break
+if nun:
+    print(f"Первый словарь является подмножеством второго: {dict1}")
+else:
+    print(f"Первый словарь не является подмножеством второго: {dict1}")
+
+
