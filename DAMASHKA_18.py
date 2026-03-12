@@ -11,20 +11,21 @@
 #
 numbers = [4, 7, 3, 7, 8, 3, 4, 2, 7, 3, 8, 4]
 
-duplicates = sorted({n for n in numbers if numbers.count(n) > 1}, reverse=True)
+num = set()
+dublikat = [n for n in numbers if numbers.count(n) > 1 and not (n in num or num.add(n))]
 
-print(f"Числа, встречающиеся более одного раза: {duplicates}")
+print(f"Числа, встречающиеся более одного раза: {dublikat}")
 
 ######################################
 
 numbers = [4, 7, 3, 7, 8, 3, 4, 2, 7, 3, 8, 4]
-
-duplicates = set()
-for n in set(numbers):
-    if numbers.count(n) > 1:
-        duplicates.add(n)
-duplicates = sorted(duplicates, reverse=True)
-print(f"Числа, встречающиеся более одного раза: {duplicates}")
+dublikat = []
+nun = set()
+for n in numbers:
+    if numbers.count(n) > 1 and n not in nun:
+        dublikat.append(n)
+        nun.add(n)
+print(f"Числа, встречающиеся более одного раза: {dublikat}")
 
 # ~~~~~~~~~~~~~~~ 2  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Проверка подмножества Задача:
