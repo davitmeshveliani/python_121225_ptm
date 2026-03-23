@@ -9,23 +9,23 @@
 # Пример вывода:
 # Числа, встречающиеся более одного раза: [7, 4, 3, 8]
 #
-numbers = [4, 7, 3, 7, 8, 3, 4, 2, 7, 3, 8, 4]
-
-num = set()
-dublikat = [n for n in numbers if numbers.count(n) > 1 and not (n in num or num.add(n))]
-
-print(f"Числа, встречающиеся более одного раза: {dublikat}")
-
-######################################
-
-numbers = [4, 7, 3, 7, 8, 3, 4, 2, 7, 3, 8, 4]
-dublikat = []
-nun = set()
-for n in numbers:
-    if numbers.count(n) > 1 and n not in nun:
-        dublikat.append(n)
-        nun.add(n)
-print(f"Числа, встречающиеся более одного раза: {dublikat}")
+# numbers = [4, 7, 3, 7, 8, 3, 4, 2, 7, 3, 8, 4]
+#
+# num = set()
+# duplicates = sorted({n for n in numbers if numbers.count(n) > 1}, reverse=True)
+#
+# print(f"Числа, встречающиеся более одного раза: {duplicates}")
+#
+# ######################################
+#
+# numbers = [4, 7, 3, 7, 8, 3, 4, 2, 7, 3, 8, 4]
+# dublikat = []
+# nun = set()
+# for n in numbers:
+#     if numbers.count(n) > 1 and n not in nun:
+#         dublikat.append(n)
+#         nun.add(n)
+# print(f"Числа, встречающиеся более одного раза: {dublikat}")
 
 # ~~~~~~~~~~~~~~~ 2  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Проверка подмножества Задача:
@@ -39,27 +39,27 @@ print(f"Числа, встречающиеся более одного раза:
 # Пример вывода:
 # Первый словарь является подмножеством второго.
 
-dict1 = {"a": 1, "b": 2,}
-dict2 = {"a": 1, "b": 2, "c": 3}
-
-if set(dict1.items()) <= set(dict2.items()):
-    print(f"Первый словарь является подмножеством второго:{dict1}")
-else:
-    print(f"Первый словарь не является подмножеством второго:{dict1}")
+# dict1 = {"a": 1, "b": 2,}
+# dict2 = {"a": 1, "b": 2, "c": 3}
+#
+# if set(dict1.items()) <= set(dict2.items()):
+#     print(f"Первый словарь является подмножеством второго:{dict1}")
+# else:
+#     print(f"Первый словарь не является подмножеством второго:{dict1}")
 #
 #
-
-
-dict1 = {"a": 1, "b": 2}
-dict2 = {"a": 1, "b": 2, "c": 3}
-nun = True
-for key, value in dict1.items():
-    if key not in dict2 or dict2[key] != value:
-        nun = False
-        break
-if nun:
-    print(f"Первый словарь является подмножеством второго: {dict1}")
-else:
-    print(f"Первый словарь не является подмножеством второго: {dict1}")
-
+#
+#
+# dict1 = {"a": 1, "b": 2}
+# dict2 = {"a": 1, "b": 2, "c": 3}
+# nun = True
+# for key, value in dict1.items():
+#     if key not in dict2 or dict2[key] != value:
+#         nun = False
+#         break
+# if nun:
+#     print(f"Первый словарь является подмножеством второго: {dict1}")
+# else:
+#     print(f"Первый словарь не является подмножеством второго: {dict1}")
+#
 
