@@ -12,7 +12,7 @@ def divide_numbers():
 
     try:
           x = float(input("Введите делимое: "))
-          y = float(inpustgitt("Введите делитель: "))
+          y = float(input("Введите делитель: "))
           result = x / y
     except ValueError:
          print("Ошибка: Введено некорректное число.")
