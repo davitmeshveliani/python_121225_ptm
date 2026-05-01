@@ -11,7 +11,7 @@ print("Площадь:", rec.get_area())
 
 rec.width = 5
 rec.height = 7
-print("Новая площадь:", rec.get_area())
+# print("Новая площадь:", rec.get_area())
 
 ############################################################
 class Counter:
@@ -27,8 +27,8 @@ class Counter:
         return self.value
 counter = Counter()
 
-print(counter.increment())
-print(counter.increment())
-print(counter.increment())
-print(counter.decrement())
-print(f"Текущее значение: {counter.get_value()}")
+# print(counter.increment())
+# print(counter.increment())
+# print(counter.increment())
+# print(counter.decrement())
+# print(f"Текущее значение: {counter.get_value()}")
