@@ -42,5 +42,5 @@ teacher = Teacher("Bob", "Mathematics")
 
 people = [student, teacher]
 
-# for person in people:  ~  это только для моей проверки.
+# for person in people:  это только для моей проверки.
 #     print(person.introduce())
