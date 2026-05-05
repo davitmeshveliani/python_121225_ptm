@@ -28,12 +28,12 @@ class Student(Person):
 class Teacher(Person):
     """A class representing a teacher, inheriting from Person."""
     def __init__(self, name, subject):
-        """Initialize the teacher with a name and a subject."""
+        """Initialize the teacher with a name and a subject """
         super().__init__(name)
         self.subject = subject
 
     def introduce(self):
-        """Return a specific greeting for a professor including their subject."""
+        """Return a specific greeting for a professor including their subject"""
         return f"Hello, I am professor {self.name}.\nMy subject is {self.subject}"
 
 
