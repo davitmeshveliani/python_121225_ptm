@@ -2,7 +2,7 @@
 This module defines the User class with validation and counter.
 """
 class User:
-    """Class representing a user with name and password validation."""
+    """Class representing a user with name and password validation """
     total_users = 0
 
     def __init__(self, user_name, password):
